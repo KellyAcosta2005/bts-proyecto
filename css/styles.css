@@ -44,3 +44,74 @@ body {
 .nav-links a:hover {
     color: #ff3e3e; 
 }
+
+.hero {
+    height: 130vh; 
+    background-image: url('../assets/fondo.png'); 
+    background-size: cover;     
+    background-position: center;  
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main-title-img {
+    max-width: 500px;
+}
+
+.greeting-form {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.greeting-form label {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.greeting-form input {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.greeting-form button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.greeting-form button:hover {
+    background-color: #ff3e3e;
+    color: white;
+}
+
+#mensajeSaludo {
+    margin-top: 10px;
+    color: #ff3e3e;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #000;
+    color: #888;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
