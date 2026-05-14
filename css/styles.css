@@ -331,9 +331,23 @@ footer {
         padding: 10px 20px;
     }
 
-    .menu-toggle {
-        display: flex;
-    }
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 30px;
+    height: 21px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+
+    appearance: none;
+}
 
     .menu-toggle.is-active .bar:nth-child(1) {
         transform: translateY(9px) rotate(45deg);
