@@ -4,92 +4,260 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS Arirang Tour | Oficial</title>
+    <meta name="description" content="Sitio oficial fan project de BTS Arirang Tour con fechas, galería y acceso a tickets.">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#tour">BTS TOUR</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-        </ul>
-    </nav>
-</header>
-
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-titles">
-                <img src="assets/tour.png" alt="BTS World Tour Arirang" class="main-title-img">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo BTS Arirang Tour">
             </div>
-            <div class="greeting-form">
-                <label for="userName">INGRESA TU NOMBRE :</label>
-                <input type="text" id="userName" placeholder="Tu nombre aquí">
-                <button id="btnEnviar">ENVIAR</button>
-            </div>
-        </div>
-    </section>
 
-    <section id="tour" class="tour-section">
-        <div class="tour-overlay-card">
-            <div class="tour-header-img">
-                <img src="assets/gira.png" alt="FECHAS DE LA GIRA">
-            </div>
-            <p class="tour-subtitle">ESPECTÁCULOS DE LATINOAMÉRICA</p>
-            <table class="tour-table">
-                <tbody>
-                    <tr><td>10/2/2026</td><td>BOGOTÁ, CO</td><td>Estadio El Campín</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>10/3/2026</td><td>BOGOTÁ, CO</td><td>Estadio El Campín</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>10/7/2026</td><td>LIMA, PE</td><td>Estadio San Marcos</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>10/9/2026</td><td>LIMA, PE</td><td>Estadio San Marcos</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>10/10/2026</td><td>LIMA, PE</td><td>Estadio San Marcos</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>14/10/2026</td><td>SANTIAGO, CL</td><td>Estadio Nacional</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>16/10/2026</td><td>SANTIAGO, CL</td><td>Estadio Nacional</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>17/10/2026</td><td>SANTIAGO, CL</td><td>Estadio Nacional</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>21/10/2026</td><td>BUENOS AIRES, AR</td><td>Estadio Único de La Plata</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>23/10/2026</td><td>BUENOS AIRES, AR</td><td>Estadio Único de La Plata</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>24/10/2026</td><td>BUENOS AIRES, AR</td><td>Estadio Único de La Plata</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>28/10/2026</td><td>SÃO PAULO, BRASIL</td><td>Estádio do MorumBIS</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>30/10/2026</td><td>SÃO PAULO, BRASIL</td><td>Estádio do MorumBIS</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                    <tr><td>31/10/2026</td><td>SÃO PAULO, BRASIL</td><td>Estádio do MorumBIS</td><td><a href="#" class="btn-tickets">TICKETS</a></td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+            <button
+                class="menu-toggle"
+                id="mobile-menu"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                type="button"
+            >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
 
-    <section id="gallery" class="gallery-section">
-        <div class="carousel-container">
-            <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
-            <div class="carousel-window">
-                <div class="carousel-track" id="track">
-                    <div class="carousel-item"><img src="assets/foto1.png" alt="BTS 1"></div>
-                    <div class="carousel-item"><img src="assets/foto2.png" alt="BTS 2"></div>
-                    <div class="carousel-item"><img src="assets/foto3.png" alt="BTS 3"></div>
-                    <div class="carousel-item"><img src="assets/foto4.png" alt="BTS 4"></div>
-                    <div class="carousel-item"><img src="assets/foto5.png" alt="BTS 5"></div>
+            <ul class="nav-links" id="nav-list">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#tour">BTS TOUR</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-titles">
+                    <img
+                        src="assets/tour.png"
+                        alt="BTS World Tour Arirang"
+                        class="main-title-img"
+                    >
+                </div>
+
+                <div class="greeting-form">
+                    <label for="userName">INGRESA TU NOMBRE :</label>
+
+                    <input
+                        type="text"
+                        id="userName"
+                        placeholder="Tu nombre aquí"
+                        autocomplete="name"
+                    >
+
+                    <button id="btnEnviar" type="button">
+                        ENVIAR
+                    </button>
                 </div>
             </div>
-            <button class="carousel-btn next" id="nextBtn">&#10095;</button>
-            <div class="carousel-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+        </section>
+
+        <section id="tour" class="tour-section">
+            <div class="tour-overlay-card">
+                <div class="tour-header-img">
+                    <img
+                        src="assets/gira.png"
+                        alt="Fechas de la gira"
+                    >
+                </div>
+
+                <p class="tour-subtitle">
+                    ESPECTÁCULOS DE LATINOAMÉRICA
+                </p>
+
+                <table class="tour-table">
+                    <tbody>
+                        <tr>
+                            <td>10/02/2026</td>
+                            <td>BOGOTÁ, CO</td>
+                            <td>Estadio El Campín</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10/03/2026</td>
+                            <td>BOGOTÁ, CO</td>
+                            <td>Estadio El Campín</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10/07/2026</td>
+                            <td>LIMA, PE</td>
+                            <td>Estadio San Marcos</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10/09/2026</td>
+                            <td>LIMA, PE</td>
+                            <td>Estadio San Marcos</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10/10/2026</td>
+                            <td>LIMA, PE</td>
+                            <td>Estadio San Marcos</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>14/10/2026</td>
+                            <td>SANTIAGO, CL</td>
+                            <td>Estadio Nacional</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>16/10/2026</td>
+                            <td>SANTIAGO, CL</td>
+                            <td>Estadio Nacional</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>17/10/2026</td>
+                            <td>SANTIAGO, CL</td>
+                            <td>Estadio Nacional</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>21/10/2026</td>
+                            <td>BUENOS AIRES, AR</td>
+                            <td>Estadio Único de La Plata</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>23/10/2026</td>
+                            <td>BUENOS AIRES, AR</td>
+                            <td>Estadio Único de La Plata</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>24/10/2026</td>
+                            <td>BUENOS AIRES, AR</td>
+                            <td>Estadio Único de La Plata</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>28/10/2026</td>
+                            <td>SÃO PAULO, BR</td>
+                            <td>Estádio do MorumBIS</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>30/10/2026</td>
+                            <td>SÃO PAULO, BR</td>
+                            <td>Estádio do MorumBIS</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>31/10/2026</td>
+                            <td>SÃO PAULO, BR</td>
+                            <td>Estádio do MorumBIS</td>
+                            <td>
+                                <a href="https://www.ticketmaster.com/bts-tickets/artist/2110227" target="_blank" rel="noopener noreferrer" class="btn-tickets">TICKETS</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
 
-<footer>
-    <p>© 2025 BTS Fan Project</p>
-</footer>
+        <section id="gallery" class="gallery-section">
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn" type="button" aria-label="Imagen anterior">
+                    &#10094;
+                </button>
 
-<script src="js/script.js"></script>
+                <div class="carousel-window">
+                    <div class="carousel-track" id="track">
+                        <div class="carousel-item">
+                            <img src="assets/foto1.png" alt="BTS imagen 1">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/foto2.png" alt="BTS imagen 2">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/foto3.png" alt="BTS imagen 3">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/foto4.png" alt="BTS imagen 4">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="assets/foto5.png" alt="BTS imagen 5">
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" id="nextBtn" type="button" aria-label="Siguiente imagen">
+                    &#10095;
+                </button>
+
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 BTS Fan Project</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

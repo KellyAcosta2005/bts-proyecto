@@ -1,29 +1,51 @@
-**BTS Arirang Tour - Landing Page**  
+# BTS Arirang Tour - Landing Page
 
-Esta es una Landing Page interactiva diseñada para el proyecto final del módulo de Frontend en el curso que estoy siguiendo en el idt.
+Este proyecto consiste en una **Landing Page interactiva** desarrollada como trabajo final del módulo de **Frontend** dentro del curso que estoy realizando en el **IDT**.
 
-**Funcionalidades**  
+## Descripción
 
-Diseño Responsivo: Adaptado para móviles y escritorio.
+La página está inspirada en una gira ficticia de BTS y fue diseñada con una estética moderna, dinámica y adaptable a distintos dispositivos. El objetivo principal fue aplicar conocimientos de estructura web, estilos responsivos e interactividad con JavaScript.
 
-Saludo Interactivo: Sección donde el usuario recibe una bienvenida personalizada a través de un formulario.
+## Funcionalidades
 
-Tour Dates: Tabla de fechas con enlaces externos para la compra de tickets.
+- **Diseño Responsivo**  
+  Adaptado para una correcta visualización en dispositivos móviles, tablets y escritorio.
 
-Galeria: Seccion de fotos con visualizacion de imagenes del tour.
+- **Saludo Interactivo**  
+  Formulario donde el usuario ingresa su nombre y recibe una bienvenida personalizada.
 
-**Tecnologias utilizadas**  
+- **Tour Dates**  
+  Tabla con fechas de conciertos y enlaces externos para compra de tickets.
 
-HTML5: Estructura semantica del sitio.
+- **Galería de Imágenes**  
+  Carrusel interactivo con fotografías del tour.
 
-CSS3: Maquetacion personalizada y diseño adaptable.
+- **Menú Mobile**  
+  Navegación adaptable con menú hamburguesa para pantallas pequeñas.
 
-JavaScript: Manipulacion del DOM para interacciones y eventos de usuario.
+## Tecnologías Utilizadas
 
-**Prototipo**  
+- **HTML5**  
+  Estructura semántica del sitio web.
 
-El diseño fue realizado previamente en Figma, definiendo la paleta de colores, tipografias y disposicion de elementos antes de iniciar la fase de programacion.
+- **CSS3**  
+  Diseño visual, animaciones, maquetación personalizada y responsividad.
 
-**Autor**  
+- **JavaScript**  
+  Manipulación del DOM, eventos, carrusel interactivo y menú móvil.
 
-Kelly Acosta.
+## Prototipo en Figma
+
+Antes del desarrollo, se realizó el diseño visual en Figma para definir:
+
+- Paleta de colores  
+- Tipografías  
+- Distribución de secciones  
+- Experiencia visual del usuario  
+
+🔗 Prototipo:  
+https://www.figma.com/proto/trXXegTKtqzB6rWD11GuYh/BTS-CONCIERTO?node-id=42-41&p=f&t=Gb0y5GkteRx2Z8mH-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A3&show-proto-sidebar=1
+
+## Autor
+
+**Kelly Acosta**
