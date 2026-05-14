@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 * {
     margin: 0;
@@ -6,9 +6,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #ffffff; 
+    background-color: #ffffff;
+    background-image: url('../assets/fondo.png'); 
+    background-size: cover; 
+    background-position: center top; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
     font-family: 'Inter', sans-serif;
+    padding-top: 80px;
 }
 
 .navbar {
@@ -17,101 +27,216 @@ body {
     align-items: center;
     padding: 15px 40px; 
     background-color: #000; 
-    height: 80px; 
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.logo img {
-    height: 100px; 
-    display: block;
+.logo img { 
+    height: 60px; 
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
+.nav-links { 
+    display: flex; 
+    list-style: none; 
     gap: 30px; 
 }
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
+.nav-links a { 
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 14px; 
     font-weight: 700; 
-    letter-spacing: 1px; 
-    transition: color 0.3s;
 }
 
-
-.nav-links a:hover {
+.nav-links a:hover { 
     color: #ff3e3e; 
 }
 
 .hero {
-    height: 130vh; 
-    background-image: url('../assets/fondo.png'); 
-    background-size: cover;     
-    background-position: center;  
-    background-repeat: no-repeat;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
-.main-title-img {
-    max-width: 500px;
+.main-title-img { 
+    max-width: 550px; 
+    width: 90%; 
 }
 
-.greeting-form {
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 20px;
-    border-radius: 5px;
+.greeting-form { 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 30px; 
+}
+
+.greeting-form label { 
+    color: white; 
+    font-size: 13px; 
+}
+
+.greeting-form input { 
+    background: transparent; 
+    border: 1px solid white; 
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    outline: none; 
+}
+
+.greeting-form button { 
+    background-color: white; 
+    padding: 8px 25px; 
+    border-radius: 20px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: 0.3s; 
+}
+
+.greeting-form button:hover { 
+    background-color: #ff3e3e; 
+    color: white; 
+}
+
+.tour-section {
+    min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+    padding: 100px 20px;
 }
 
-.greeting-form label {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.greeting-form input {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    outline: none;
-}
-
-.greeting-form button {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.greeting-form button:hover {
-    background-color: #ff3e3e;
-    color: white;
-}
-
-#mensajeSaludo {
-    margin-top: 10px;
-    color: #ff3e3e;
-    font-weight: bold;
-}
-
-footer {
-    background-color: #000;
-    color: #888;
+.tour-overlay-card {
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 5px;
     text-align: center;
-    padding: 15px;
-    font-size: 12px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.1); 
+    border: 1px solid #eee; 
+}
+
+.tour-header-img img { 
+    max-width: 450px; 
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.tour-subtitle { 
+    color: #000; 
+    font-weight: bold; 
+    margin-bottom: 35px; 
+}
+
+.tour-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+
+.tour-table td { 
+    padding: 15px 10px; 
+    color: #000; 
+    border-bottom: 1px solid #eee; 
+    text-align: left; 
+}
+
+.btn-tickets { 
+    background-color: #000; 
+    color: #fff; 
+    padding: 6px 18px; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    font-size: 11px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+}
+
+.btn-tickets:hover { 
+    background-color: #ff3e3e; 
+}
+
+.gallery-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.carousel-window {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev { left: -60px; }
+.next { right: -60px; }
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active { 
+    background-color: #000; 
+}
+
+footer { 
+    background-color: #000; 
+    color: #888; 
+    text-align: center; 
+    padding: 25px; 
+    font-size: 11px; 
 }
